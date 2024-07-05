@@ -11,7 +11,7 @@ import java.util.function.Function;
 @FunctionalInterface
 public interface PurchaseValidation extends Function<CreditCardTransaction, CommonValidationResult> {
 
-    static PurchaseValidation validate(){
+    static PurchaseValidation validate() {
         return request -> {
             CommonValidationResult commonValidationResult = CommonValidationResult.builder()
                     .commonProcessResult(CommonProcessResult.PROCESS_SUCCESSFULLY_COMPLETED)

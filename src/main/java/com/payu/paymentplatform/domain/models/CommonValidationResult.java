@@ -7,8 +7,8 @@ import java.util.List;
 
 @Data
 @SuperBuilder
-public class CommonValidationResult  {
+public class CommonValidationResult {
 
-    private  CommonProcessResult commonProcessResult;
+    private CommonProcessResult commonProcessResult;
     private List<String> errors;
 }
